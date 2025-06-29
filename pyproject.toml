@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "advanced-rppg"
+version = "1.0.0"
+description = "Advanced Remote Photoplethysmography Application with real-time heart rate and HRV estimation"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Sherin Joseph Roy", email = "sherin.joseph2217@gmail.com"}
+]
+maintainers = [
+    {name = "Sherin Joseph Roy", email = "sherin.joseph2217@gmail.com"}
+]
+keywords = ["rppg", "photoplethysmography", "heart-rate", "computer-vision", "medical", "health", "hrv", "biometrics"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Healthcare Industry",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "opencv-python>=4.8.0",
+    "numpy>=1.21.0",
+    "scipy>=1.7.0",
+    "matplotlib>=3.5.0",
+    "PyQt5>=5.15.0",
+    "mediapipe>=0.10.0",
+    "scikit-learn>=1.0.0",
+    "pandas>=1.3.0",
+    "pyqtgraph>=0.12.0",
+    "numba>=0.56.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+    "black>=21.0",
+    "flake8>=3.8",
+    "mypy>=0.800",
+]
+docs = [
+    "sphinx>=4.0",
+    "sphinx-rtd-theme>=1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/sherinjoseph/advanced-rppg"
+Documentation = "https://advanced-rppg.readthedocs.io/"
+Repository = "https://github.com/sherinjoseph/advanced-rppg"
+"Bug Tracker" = "https://github.com/sherinjoseph/advanced-rppg/issues"
+
+[project.scripts]
+rppg-app = "advanced_rppg.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["advanced_rppg*"]
+
+[tool.setuptools.package-data]
+"advanced_rppg" = ["data/*", "clips/*"] 

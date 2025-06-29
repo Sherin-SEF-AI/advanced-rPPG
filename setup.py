@@ -19,12 +19,12 @@ def read_requirements():
 setup(
     name="advanced-rppg",
     version="1.0.0",
-    author="rPPG Research Team",
-    author_email="contact@rppg-research.com",
-    description="Advanced Remote Photoplethysmography Application",
+    author="Sherin Joseph Roy",
+    author_email="sherin.joseph2217@gmail.com",
+    description="Advanced Remote Photoplethysmography Application with real-time heart rate and HRV estimation",
     long_description=read_readme(),
     long_description_content_type="text/markdown",
-    url="https://github.com/rppg-research/advanced-rppg",
+    url="https://github.com/sherinjoseph/advanced-rppg",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -37,9 +37,11 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "Topic :: Scientific/Engineering :: Medical Science Apps.",
         "Topic :: Scientific/Engineering :: Image Processing",
         "Topic :: Multimedia :: Video",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ],
     python_requires=">=3.8",
     install_requires=read_requirements(),
@@ -58,17 +60,17 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "rppg-app=main:main",
+            "rppg-app=advanced_rppg.main:main",
         ],
     },
     include_package_data=True,
     package_data={
-        "": ["*.md", "*.txt", "*.json", "*.yaml", "*.yml"],
+        "advanced_rppg": ["data/*", "clips/*"],
     },
-    keywords="rppg, photoplethysmography, heart-rate, computer-vision, medical, health",
+    keywords="rppg, photoplethysmography, heart-rate, computer-vision, medical, health, hrv, biometrics",
     project_urls={
-        "Bug Reports": "https://github.com/rppg-research/advanced-rppg/issues",
-        "Source": "https://github.com/rppg-research/advanced-rppg",
+        "Bug Reports": "https://github.com/sherinjoseph/advanced-rppg/issues",
+        "Source": "https://github.com/sherinjoseph/advanced-rppg",
         "Documentation": "https://advanced-rppg.readthedocs.io/",
     },
 ) 
