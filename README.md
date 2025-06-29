@@ -229,7 +229,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 ```bash
 # Clone repository
-git clone https://github.com/your-username/advanced-rppg.git
+git clone [https://github.com/your-username/advanced-rppg.git](https://github.com/Sherin-SEF-AI/advanced-rPPG.git)
 cd advanced-rppg
 
 # Install development dependencies
@@ -259,9 +259,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/your-username/advanced-rppg/issues)
+- **Issues**: [GitHub Issues][(https://github.com/Sherin-SEF-AI/advanced-rPPG.git)/issues)
 - **Documentation**: [Wiki](https://github.com/your-username/advanced-rppg/wiki)
-- **Email**: contact@rppg-research.com
+- **Email**: sherin.joseph2217@gmail.com
 
 ## 🔬 Research Applications
 
